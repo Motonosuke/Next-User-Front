@@ -1,3 +1,3 @@
 export { FormLayout } from './FormLayout';
-export { TopLayout } from './TopLayout';
+export { UserLayout } from './UserLayout';
 export { MainLayout } from './MainLayout';

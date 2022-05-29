@@ -1,8 +1,11 @@
-import { useFetchPosts } from 'features/posts';
+import { useFetchUsers, deleteUser, postCreateUser, updateUser } from 'features/users';
 
 export const repositories = {
-  posts: {
-    useFetchPosts,
+  users: {
+    deleteUser,
+    postCreateUser,
+    updateUser,
+    useFetchUsers,
   },
 };
 

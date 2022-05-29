@@ -1,14 +1,12 @@
 import type { CustomLayout } from 'next';
 
-import { Header } from 'components/Header';
 import { Box } from 'components/chakra-parts/Layout';
 import { chakra } from 'components/chakra-parts/Other';
 
-export const TopLayout: CustomLayout = (page) => {
+export const UserLayout: CustomLayout = (page) => {
   return (
     <chakra.main>
-      <Header />
-      <Box height="100vh" mt={20} mx="auto" width="70vw">
+      <Box height="100vh" mx="auto" pt={20} width="70vw">
         {page}
       </Box>
     </chakra.main>

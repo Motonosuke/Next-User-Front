@@ -1,14 +1,18 @@
+import { useEffect } from 'react';
+
 import type { CustomNextPage } from 'next';
 
 import { MainLayout } from 'components/Layout';
-import { Box } from 'components/chakra-parts/Layout/Box';
+import { useGoToPage } from 'hooks/useGoToPage';
 
 const Home: CustomNextPage = () => {
-  return (
-    <Box>
-      <p>Top Page</p>
-    </Box>
-  );
+  const [{ goToUsersPage }] = useGoToPage();
+
+  useEffect(() => {
+    goToUsersPage();
+  }, [goToUsersPage]);
+
+  return null;
 };
 
 Home.getLayout = MainLayout;
